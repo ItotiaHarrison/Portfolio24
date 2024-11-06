@@ -1,17 +1,22 @@
-import React from 'react';
+import React from "react";
 
 interface TimelineItemProps {
-  year: string;
+  timeRange: string;
   title: string;
   company: string;
   description: string;
 }
 
-const TimelineItem: React.FC<TimelineItemProps> = ({ year, title, company, description }) => {
+const TimelineItem: React.FC<TimelineItemProps> = ({
+  timeRange,
+  title,
+  company,
+  description,
+}) => {
   return (
     <div className="relative pl-8 sm:pl-32 py-6 group">
       <div className="font-medium text-indigo-600 mb-1 sm:mb-0 sm:absolute sm:left-0 sm:text-right sm:w-24">
-        {year}
+        {timeRange}
       </div>
       <div className="flex flex-col sm:pl-8 sm:border-l border-gray-300">
         <div className="absolute -left-1 sm:left-[7.5rem] w-2 h-2 bg-indigo-600 rounded-full group-hover:scale-150 transition-transform"></div>

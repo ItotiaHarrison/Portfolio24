@@ -1,5 +1,6 @@
 import React from 'react';
-import { Menu, X, Code2 } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
+import logo from '../assets/logo.png'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -11,7 +12,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <Code2 className="h-8 w-8 text-indigo-600" />
+            <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
             <span className="ml-2 text-xl font-bold text-gray-900">Harrison Itotia</span>
           </div>
           

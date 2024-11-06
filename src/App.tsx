@@ -7,6 +7,7 @@ import SkillCard from './components/SkillCard';
 import beyondMyTribeImage from './assets/BMT.png'
 import realEstateImage from './assets/realestate.png'
 import haritHotelImage from './assets/HaritHotel.png'
+import logo from './assets/logo.png'
 
 function App() {
   const projects = [
@@ -241,7 +242,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center mb-4 md:mb-0">
-              <Code2 className="h-8 w-8 text-indigo-400" />
+            <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
               <span className="ml-2 text-xl font-bold">Harrison Itotia</span>
             </div>
             <div className="flex space-x-6">

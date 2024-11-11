@@ -54,7 +54,7 @@ function App() {
       image: realEstateImage,
       technologies: ["React", "TailwindCSS", "firebase"],
       githubUrl: "https://github.com/ItotiaHarrison/Real-Estate-app",
-      liveUrl: "https://real-estate-app-krma.vercel.app/",
+      liveUrl: "https://real-estate-gamma-ten.vercel.app/",
     },
     {
       title: "Harit Hotel",

@@ -50,7 +50,7 @@ function App() {
     {
       title: "Real Estate",
       description:
-        "A real estate website providing enabling property owners to list their properties for sale or tenants to rent.",
+        "A real estate website enabling property owners to list their properties for sale or tenants to rent.",
       image: realEstateImage,
       technologies: ["React", "TailwindCSS", "firebase"],
       githubUrl: "https://github.com/ItotiaHarrison/Real-Estate-app",

@@ -100,7 +100,7 @@ function App() {
       title: "Software Developer Intern",
       company: "iTalanta",
       description:
-        "Integrated OAuth for user authentication in the Elewa project. Developed intuitive user interfaces for a learning management system using Angular.js. Participated in code reviews and discussions on new feature implementations.",
+        "Integrated OAuth for user authentication in the Elewa project. Developed various web pages for a learning management system using Angular.js. Participated in code reviews and discussions on new feature implementations.",
     },
   ];
 

@@ -50,11 +50,11 @@ function App() {
     {
       title: "Real Estate",
       description:
-        "A real estate website providing enabling property owners to list their properties for sale or tenants to rent.",
+        "A real estate website enabling property owners to list their properties for sale or tenants to rent.",
       image: realEstateImage,
       technologies: ["React", "TailwindCSS", "firebase"],
       githubUrl: "https://github.com/ItotiaHarrison/Real-Estate-app",
-      liveUrl: "https://real-estate-app-krma.vercel.app/",
+      liveUrl: "https://real-estate-gamma-ten.vercel.app/",
     },
     {
       title: "Harit Hotel",
@@ -100,7 +100,7 @@ function App() {
       title: "Software Developer Intern",
       company: "iTalanta",
       description:
-        "Integrated OAuth for user authentication in the Elewa project. Developed intuitive user interfaces for a learning management system using Angular.js. Participated in code reviews and discussions on new feature implementations.",
+        "Integrated OAuth for user authentication in the Elewa project. Developed various web pages for a learning management system using Angular.js. Participated in code reviews and discussions on new feature implementations.",
     },
   ];
 

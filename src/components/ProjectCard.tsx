@@ -1,12 +1,13 @@
 import React from 'react';
-import { ExternalLink, Github } from 'lucide-react';
+//import { Github } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
 
 interface ProjectCardProps {
   title: string;
   description: string;
   image: string;
   technologies: string[];
-  githubUrl: string;
+  //githubUrl: string;
   liveUrl: string;
 }
 
@@ -15,7 +16,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   description,
   image,
   technologies,
-  githubUrl,
+  //githubUrl,
   liveUrl,
 }) => {
   return (
@@ -41,7 +42,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           ))}
         </div>
         <div className="flex gap-4">
-          <a
+          {/* <a
             href={githubUrl}
             target="_blank"
             rel="noopener noreferrer"
@@ -49,7 +50,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           >
             <Github className="h-5 w-5" />
             <span>Code</span>
-          </a>
+          </a> */}
           <a
             href={liveUrl}
             target="_blank"
@@ -57,7 +58,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             className="flex items-center gap-2 text-gray-600 hover:text-indigo-600 transition-colors"
           >
             <ExternalLink className="h-5 w-5" />
-            <span>Live Demo</span>
+            <span>Website</span>
           </a>
         </div>
       </div>

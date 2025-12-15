@@ -9,16 +9,16 @@ interface SkillCardProps {
 
 const SkillCard: React.FC<SkillCardProps> = ({ title, Icon, skills }) => {
   return (
-    <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-      <div className="flex items-center gap-3 mb-4">
-        <Icon className="h-6 w-6 text-indigo-600" />
-        <h3 className="text-lg font-bold text-gray-900">{title}</h3>
+    <div className="fintech-card group">
+      <div className="flex items-center gap-3 mb-6">
+        <Icon className="h-6 w-6 text-green-500 group-hover:scale-110 transition-transform" />
+        <h3 className="font-serif text-lg font-bold text-slate-100">{title}</h3>
       </div>
       <div className="flex flex-wrap gap-2">
         {skills.map((skill) => (
           <span
             key={skill}
-            className="px-3 py-1 bg-indigo-50 text-indigo-600 rounded-full text-sm font-medium hover:bg-indigo-100 transition-colors"
+            className="px-3 py-1 bg-slate-700 text-slate-300 rounded-md text-sm font-mono hover:bg-green-500/20 hover:text-green-400 transition-colors cursor-default"
           >
             {skill}
           </span>

@@ -10,18 +10,20 @@ interface TestimonialCardProps {
 
 const TestimonialCard: React.FC<TestimonialCardProps> = ({ name, role, image, content }) => {
   return (
-    <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-      <Quote className="h-8 w-8 text-indigo-600 mb-4" />
-      <p className="text-gray-600 mb-6 italic">{content}</p>
+    <div className="fintech-card group relative">
+      <Quote className="h-8 w-8 text-green-500 mb-4 group-hover:scale-110 transition-transform" />
+      <blockquote className="text-slate-300 mb-6 italic leading-relaxed font-serif text-lg">
+        "{content}"
+      </blockquote>
       <div className="flex items-center gap-4">
         <img
           src={image}
           alt={name}
-          className="w-12 h-12 rounded-full object-cover"
+          className="w-12 h-12 rounded-full object-cover border-2 border-slate-600"
         />
         <div>
-          <h4 className="font-semibold text-gray-900">{name}</h4>
-          <p className="text-gray-600 text-sm">{role}</p>
+          <h4 className="font-serif font-semibold text-slate-100">{name}</h4>
+          <p className="text-slate-400 text-sm font-mono">{role}</p>
         </div>
       </div>
     </div>

@@ -14,15 +14,15 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
   description,
 }) => {
   return (
-    <div className="relative pl-8 sm:pl-32 py-6 group">
-      <div className="font-medium text-indigo-600 mb-1 sm:mb-0 sm:absolute sm:left-0 sm:text-right sm:w-24">
+    <div className="relative pl-8 sm:pl-32 py-8 group">
+      <div className="font-mono text-sm text-green-400 mb-2 sm:mb-0 sm:absolute sm:left-0 sm:text-right sm:w-28 uppercase tracking-wider">
         {timeRange}
       </div>
-      <div className="flex flex-col sm:pl-8 sm:border-l border-gray-300">
-        <div className="absolute -left-1 sm:left-[7.5rem] w-2 h-2 bg-indigo-600 rounded-full group-hover:scale-150 transition-transform"></div>
-        <h3 className="text-xl font-bold text-gray-900">{title}</h3>
-        <p className="text-indigo-600 font-medium mb-2">{company}</p>
-        <p className="text-gray-600">{description}</p>
+      <div className="flex flex-col sm:pl-8 sm:border-l-2 border-slate-600">
+        <div className="absolute -left-1 sm:left-[7.5rem] w-3 h-3 bg-green-500 rounded-full group-hover:scale-125 transition-transform shadow-lg shadow-green-500/50"></div>
+        <h3 className="font-serif text-xl font-bold text-slate-100 mb-1">{title}</h3>
+        <p className="text-yellow-400 font-semibold mb-3 font-mono text-sm">{company}</p>
+        <p className="text-slate-300 leading-relaxed">{description}</p>
       </div>
     </div>
   );

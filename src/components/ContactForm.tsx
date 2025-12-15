@@ -52,59 +52,64 @@ const ContactForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-6">
-      <Toaster position="top-right" />
-      <div>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          value={formData.name}
-          onChange={handleChange}
-          required
-          className="transition ease-in-out rounded w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 sm:text-sm"
-          placeholder="Enter your name"
-        />
-      </div>
-      <div>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-          required
-          className="transition ease-in-out rounded w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 sm:text-sm"
-          placeholder="Email address"
-        />
-      </div>
-      <div>
-        <textarea
-          id="message"
-          name="message"
-          rows={4}
-          value={formData.message}
-          onChange={handleChange}
-          required
-          className="transition ease-in-out rounded w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 sm:text-sm"
-          placeholder="Write your message here"
-        />
-      </div>
-      <button
-        type="submit"
-        disabled={isLoading}
-        className="w-full bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition-colors disabled:bg-indigo-400 disabled:cursor-not-allowed flex items-center justify-center"
-      >
-        {isLoading ? (
-          <>
-            <Loader2 className="animate-spin h-5 w-5 mr-2" />
-            Sending...
-          </>
-        ) : (
-          "Send Message"
-        )}
-      </button>
-    </form>
+    <div className="fintech-card">
+      <form onSubmit={handleSubmit} className="space-y-6">
+        <Toaster position="top-right" />
+        <div>
+          <label className="block text-slate-300 font-mono text-sm mb-2 uppercase tracking-wider">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            required
+            className="w-full px-4 py-3 rounded-lg bg-slate-700 border border-slate-600 text-slate-100 placeholder-slate-400 focus:border-green-500 focus:ring-1 focus:ring-green-500 transition-colors"
+            placeholder="Enter your name"
+          />
+        </div>
+        <div>
+          <label className="block text-slate-300 font-mono text-sm mb-2 uppercase tracking-wider">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+            className="w-full px-4 py-3 rounded-lg bg-slate-700 border border-slate-600 text-slate-100 placeholder-slate-400 focus:border-green-500 focus:ring-1 focus:ring-green-500 transition-colors"
+            placeholder="Email address"
+          />
+        </div>
+        <div>
+          <label className="block text-slate-300 font-mono text-sm mb-2 uppercase tracking-wider">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows={4}
+            value={formData.message}
+            onChange={handleChange}
+            required
+            className="w-full px-4 py-3 rounded-lg bg-slate-700 border border-slate-600 text-slate-100 placeholder-slate-400 focus:border-green-500 focus:ring-1 focus:ring-green-500 transition-colors resize-none"
+            placeholder="Write your message here"
+          />
+        </div>
+        <button
+          type="submit"
+          disabled={isLoading}
+          className="w-full bg-green-500 text-slate-900 px-6 py-3 rounded-lg hover:bg-green-400 transition-colors disabled:bg-green-600 disabled:cursor-not-allowed flex items-center justify-center font-serif font-semibold"
+        >
+          {isLoading ? (
+            <>
+              <Loader2 className="animate-spin h-5 w-5 mr-2" />
+              Sending...
+            </>
+          ) : (
+            "Send Message"
+          )}
+        </button>
+      </form>
+    </div>
   );
 };
 
